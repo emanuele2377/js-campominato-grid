@@ -10,18 +10,18 @@ for (let i = 1; i < 100; i++) {
   
 }
 
-document.getElementById("main").innerHTML = numeri;
-
 for (let i = 1; i <= numCelle; i++) {
     
     let cella = creaQuadrato(i);
-    grid.appendChild(cella);
-
+    grid.appendChild(cella);   
 }
 
 /******************************************************************** */
 
 function creaQuadrato(numero) {
+    
+    document.getElementById("main").innerHTML = numeri;
+
 
     const cella = document.createElement("div");
     cella.classList.add("square");
@@ -29,6 +29,8 @@ function creaQuadrato(numero) {
     //per ogni quadrato voglio un evento che gestisca il click
     cella.addEventListener("click", function() {
 
+        const cella = document.createElement("div");
+        cella.classList.add("numeri");
         console.log("Cella cliccata", numero);
         
         //versione abbreviata
