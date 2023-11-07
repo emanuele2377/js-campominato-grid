@@ -3,11 +3,14 @@
 //creare la griglia dinamicamente, inserendo N elementi .square nel container
 let numCelle = 100;
 let grid = document.getElementById("grid");
+let numeri = "";
 
- 
-for ( let i = 1; i <= 100; i++) {
+for (let i = 1; i < 100; i++) {
+  numeri += i + "<br>";
   
 }
+
+document.getElementById("main").innerHTML = numeri;
 
 for (let i = 1; i <= numCelle; i++) {
     
